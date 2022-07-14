@@ -1,4 +1,7 @@
-{[
+import Directory from "../../components/directory/directory.component";
+
+const Home = () => {
+  const categories = [
     {
       id: 1,
       title: "hats",
@@ -24,4 +27,8 @@
       title: "mens",
       imageUrl: "https://i.ibb.co/R70vBrQ/men.png",
     },
-  ]};
+  ];
+  return <Directory categories={categories} />;
+};
+
+export default Home;
